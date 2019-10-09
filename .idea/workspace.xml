@@ -2,11 +2,16 @@
 <project version="4">
   <component name="ChangeListManager">
     <list default="true" id="de825bd5-6145-43d9-b674-9a34d116ae1e" name="Default Changelist" comment="">
-      <change afterPath="$PROJECT_DIR$/src/harjoittelu/scala/commands/Mkdir.scala" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/out/production/filesystem/harjoittelu/scala/filesystem/State.class" beforeDir="false" afterPath="$PROJECT_DIR$/out/production/filesystem/harjoittelu/scala/filesystem/State.class" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/out/production/filesystem/harjoittelu/scala/commands/Command$.class" beforeDir="false" afterPath="$PROJECT_DIR$/out/production/filesystem/harjoittelu/scala/commands/Command$.class" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/out/production/filesystem/harjoittelu/scala/commands/Command.class" beforeDir="false" afterPath="$PROJECT_DIR$/out/production/filesystem/harjoittelu/scala/commands/Command.class" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/out/production/filesystem/harjoittelu/scala/files/DirEntry.class" beforeDir="false" afterPath="$PROJECT_DIR$/out/production/filesystem/harjoittelu/scala/files/DirEntry.class" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/out/production/filesystem/harjoittelu/scala/files/Directory$.class" beforeDir="false" afterPath="$PROJECT_DIR$/out/production/filesystem/harjoittelu/scala/files/Directory$.class" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/out/production/filesystem/harjoittelu/scala/files/Directory.class" beforeDir="false" afterPath="$PROJECT_DIR$/out/production/filesystem/harjoittelu/scala/files/Directory.class" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/src/harjoittelu/scala/commands/Command.scala" beforeDir="false" afterPath="$PROJECT_DIR$/src/harjoittelu/scala/commands/Command.scala" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/harjoittelu/scala/filesystem/State.scala" beforeDir="false" afterPath="$PROJECT_DIR$/src/harjoittelu/scala/filesystem/State.scala" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/harjoittelu/scala/commands/Mkdir.scala" beforeDir="false" afterPath="$PROJECT_DIR$/src/harjoittelu/scala/commands/Mkdir.scala" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/harjoittelu/scala/files/DirEntry.scala" beforeDir="false" afterPath="$PROJECT_DIR$/src/harjoittelu/scala/files/DirEntry.scala" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/harjoittelu/scala/files/Directory.scala" beforeDir="false" afterPath="$PROJECT_DIR$/src/harjoittelu/scala/files/Directory.scala" afterDir="false" />
     </list>
     <option name="EXCLUDED_CONVERTED_TO_IGNORED" value="true" />
     <option name="SHOW_DIALOG" value="false" />

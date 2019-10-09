@@ -8,21 +8,35 @@ trait Command {
 
 object Command
 {
+  val MKDIR = "mkdir"
+
   //factory method kaikille komennoille
-  def emptyCommand: Command = ???
-  def inCompleteCommand(name: String): Command = ???
+  def emptyCommand: Command = new Command { //anonymous class
+    override def apply(state:State): State = state
+  }
+
+  def inCompleteCommand(name: String): Command = new Command {
+    override def apply(state: State): State =
+      state.setMessage(name + ": incomplete command!");
+  }
   def from(input: String): Command = {
+
 
     //mkdir ottaa yhden argumentin
     val tokens: Array[String]  = input.split(" ")
 
-    if(tokens.isEmpty) emptyCommand
+    if(input.isEmpty || tokens.isEmpty) emptyCommand
     //scalassa ei array accessiä [] vaan () eli tokens.apply(0) tekee uuden lol
-    else if ("mkdir".equals(tokens(0))) {
-      if (tokens.length < 2) inCompleteCommand("mkdir");
-      else new Mkdir(tokens(1))
+    else if (MKDIR.equals(tokens(0))) {
+      if (tokens.length < 2) {
+        inCompleteCommand(MKDIR)
+      };
+      else  {
+        new Mkdir(tokens(1))
+      }
+    } else {
+      new UnknownCommand
     }
 
-    new UnknownCommand
   }
 }
