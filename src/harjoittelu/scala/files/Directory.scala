@@ -13,7 +13,7 @@ class Directory(override val parentPath: String,
 
   def getAllFoldersInPath: List[String] = {
       // /a/b/c/d => list["a","b","c","d"]
-    path.substring(1).split(Directory.SEPARATOR).toList
+    path.substring(1).split(Directory.SEPARATOR).toList.filter(x => !x.isEmpty)
 
   }
   def findDescendant(path: List[String]): Directory = {
@@ -41,6 +41,7 @@ class Directory(override val parentPath: String,
     }
 
   def asDirectory: Directory = this
+  def getType: String = "Directory"
 }
 
 object Directory {

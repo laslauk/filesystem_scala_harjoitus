@@ -9,6 +9,7 @@ trait Command {
 object Command
 {
   val MKDIR = "mkdir"
+  val LS = "ls"
 
   //factory method kaikille komennoille
   def emptyCommand: Command = new Command { //anonymous class
@@ -30,11 +31,15 @@ object Command
     else if (MKDIR.equals(tokens(0))) {
       if (tokens.length < 2) {
         inCompleteCommand(MKDIR)
-      };
+      }
       else  {
         new Mkdir(tokens(1))
       }
-    } else {
+    }
+    else if (LS.equals(tokens(0))) {
+      new Ls
+    }
+    else {
       new UnknownCommand
     }
 
