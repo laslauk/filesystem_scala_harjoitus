@@ -4,7 +4,7 @@ import harjoittelu.scala.files.Directory
 class State(val root: Directory, val wd: Directory, val output:  String) {
 
   def show: Unit = {
-    print(output)
+    println(output)
     print(State.SHELL_TOKEN)
   }
 
