@@ -1,0 +1,1 @@
+Virtuaalinen filesystem. Scalan harjoittelua ja hassuttelua.
